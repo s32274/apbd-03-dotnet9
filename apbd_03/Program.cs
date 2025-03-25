@@ -38,15 +38,14 @@
 
             ship1.RemoveContainer(container2);
 
-            Console.WriteLine("\tBEFORE UNLOADING ship 1:\n" + ship1.Info());
+            Console.WriteLine("\tBEFORE UNLOADING CONTAINER ON ship 1:\n" + ship1.Info());
             container1.Unload();
-            Console.WriteLine("\tAFTER UNLOADING ship 1:\n" + ship1.Info());
+            Console.WriteLine("\tAFTER UNLOADING CONTAINER ON ship 1:\n" + ship1.Info());
 
             ship1.SwapContainer(container1.GetSerialId(), container3);
 
             ship1.MoveContainer(container3, ship2);
-
-
+            
             Console.WriteLine(ship1.Info());
         }
     }
